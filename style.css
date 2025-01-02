@@ -1,19 +1,152 @@
-.body {
+body {
+    font-family: Segoe UI, Arial, sans-serif;
     background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
-.container {
+
+#calcBody {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(26, 31, 50);
+    width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    background-color: rgb(32, 37, 56);
+    height: 28px;
+}
+
+#title {
+    flex-grow: 1;
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.menu-bar .btnC {
+    width: 40px;
+    height: 28px;
+    margin: 0 1px;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.menu-bar .btnC img {
+    width: 14px;
+    height: 14px;
+}
+
+.mode-bar {
     display: grid;
-    grid-template-areas: 
-    'title minimize maximize close'
-    'menu mode mode history'
-    'window window window window'
-    'memory memory memory memory'
-    'keypad keypad keypad keypad';
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
+    padding: 6px;
+    gap: 8px;
+    align-items: center;
 }
+
+#mode {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.history-display {
+    height: 24px;
+    padding: 0 20px;
+    text-align: right;
+    font-size: 14px;
+    color: #909090;
+}
+
+.window-bar {
+    height: 80px;
+    padding: 0 20px 10px;
+    text-align: right;
+    font-size: 42px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.memory-bar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+    padding: 2px;
+}
+
+.memory-bar .btnC {
+    height: 32px;
+    width: auto;
+    font-size: 12px;
+    color: #909090;
+    justify-content: center;
+}
+
 .keypad {
-    display: grid;   
-    grid-template-rows: repeat(4, 1fr);
+    padding: 4px;
+    gap: 1px;
+}
+
+.keypad-row {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    margin: 1px;
+    transition: background-color 0.2s;
+}
+
+.btnA {
+    background-color: rgb(45, 50, 69);
+}
+
+.btnA:hover {
+    background-color: rgb(55, 60, 79);
+}
+
+.btnC {
+    background-color: transparent;
+}
+
+.btnC:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btnD {
+    background-color: rgb(76, 194, 255);
+    color: rgb(26, 31, 50);
+}
+
+.btnD:hover {
+    background-color: rgb(96, 214, 255);
+}
+
+button img {
+    width: 18px;
+    height: 18px;
+}
+
+#close:hover {
+    background-color: rgb(232, 17, 35);
 }

@@ -7,12 +7,71 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="w10-background"></div>    
-    <div class="container">
+    <div id="w10-background"></div>
+    <div id="calcBody">
+    <div class="menu-bar">       
         <div id="title">Calculator</div>
-        <div id="minimize"></div>
-        <div id="maximize"></div>
-        <div id="close"></div>
-    <script src="script.js"></script>
+        <button class="btnC" id="minimize"><img src="images/google-fonts-minimize.svg" alt=""></button>
+        <button class="btnC" id="maximize"><img src="images/google-fonts-maximize.svg" alt=""></button>
+        <button class="btnC" id="close"><img src="images/google-fonts-close.svg" alt=""></button>
+        
+    </div>
+    <div class="mode-bar">
+        <button class="btnC" id="menu"><img src="images/google-fonts-hamburger-menu.svg" alt=""></button>
+        <div id="mode">Standard</div>
+        <button class="btnC" id="history"><img src="images/google-fonts-history.svg" alt=""></button>        
+    </div>
+    <div class="history-display" id="history-display">History goes here</div>
+    <div class="window-bar">
+        <div class="btnC" id="window">0</div>
+    </div>
+    <div class="memory-bar">
+        <button class="btnC" id="mc">MC</button>
+        <button class="btnC" id="mr">MR</button>
+        <button class="btnC" id="mplus">M+</button>
+        <button class="btnC" id="mminus">M-</button>
+        <button class="btnC" id="ms">MS</button>
+        <button class="btnC" id="mdown">M⌄</button>
+    </div>    
+    <div class="keypad">
+            <div class="keypad-row">
+                <button class="btnA" id="percent">%</button>
+                <button class="btnA" id="ce">CE</button>
+                <button class="btnA" id="c">C</button>
+                <button class="btnA" id="delete"><img src="images/google-fonts-delete.svg" alt=""></button>
+            </div>
+            <div class="keypad-row">
+                <button class="btnA" id="reciprocal">1/X</button>
+                <button class="btnA" id="x2">X2</button>
+                <button class="btnA" id="sqrt">2&radic;X</button>
+                <button class="btnA" id="divide">÷</button>
+            </div>
+            <div class="keypad-row">
+                <button class="btnA" id="7">7</button>
+                <button class="btnA" id="8">8</button>
+                <button class="btnA" id="9">9</button>
+                <button class="btnA"id="multiply">x</button>
+            </div>
+            <div class="keypad-row">
+                <button class="btnA"id="4">4</button>
+                <button class="btnA"id="5">5</button>
+                <button class="btnA"id="6">6</button>
+                <button class="btnA"id="subtract">-</button>
+            </div>
+            <div class="keypad-row">
+                <button class="btnA" id="1">1</button>
+                <button class="btnA" id="2">2</button>
+                <button class="btnA" id="3">3</button>
+                <button class="btnA" id="add">+</button>
+            </div>
+            <div class="keypad-row">
+                <button class="btnA" id="sign">+/-</button>
+                <button class="btnA" id="0">0</button>
+                <button class="btnA" id="decimal">.</button>
+                <button class="btnD" id="equals">=</button>
+            </div>
+        </div>
+
+            <script src="script.js"></script>
 </body>
 </html>
